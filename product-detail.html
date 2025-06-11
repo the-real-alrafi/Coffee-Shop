@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Coffee Shop Logo">
+            </div>
+            <ul id="navMenu">
+                <i class="fa-solid fa-xmark" id="closeMenuIcon"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#customers">Customers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
+        </nav>
+
+        <div class="search-bar" id="searchBar">
+            <input type="search" placeholder="Search for your favorite coffee..." id="searchInput">
+            <i class="fa-solid fa-xmark" id="closeSearchBar"></i>
+            <div class="search-recommendations" id="searchRecommendations">
+                </div>
+        </div>
+        <main class="hero-section">
+            <div class="left-section">
+                <h1>Start Your Day <span class="coffee-text">With Coffee</span></h1>
+                <p>Experience the rich taste and aroma of our premium coffee,
+                <br>Brewed to perfection just for you. Start your day the right way.</p>
+                <button class="btn">Order Now</button>
+            </div>
+
+            <div class="right-section">
+                <img src="images/cap.png" alt="Coffee Cup">
+            </div>
+        </main>
+    </header>
+
+    <section class="about-section" id="about-us">
+        <h2 class="section-heading">About <span class="highlight-text">Us</span></h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/coffe_cup.jpg" alt="Coffee Beans and Story">
+            </div>
+            <div class="about-text">
+                <h3>Our History & Our Passion</h3>
+                <p>
+                    Our story began with a love for coffee and a desire to create something honest and lasting. From sourcing to roasting, every step is guided by passion, precision, and purpose. We've grown through commitment, stayed rooted in values, and built a brand that speaks through its flavor. Each blend is crafted to inspire trust in quality, in consistency, and in care. Every cup we serve is not just coffee it’s our history in your hands.
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section" id="products">
+        <h2 class="section-heading">Our Popular <span class="highlight-text">Products</span></h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="arabica">
+                <div class="product-image-wrapper">
+                    <img src="images/Arebica.webp" alt="Arabica Coffee Beans">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ARABICA COFFEE</h3>
+                    <div class="product-price">$25.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="rich-espresso">
+                <div class="product-image-wrapper">
+                    <img src="images/Rich Espresso Blend.webp" alt="Espresso Roast">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">RICH ESPRESSO</h3>
+                    <div class="product-price">$28.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="bold-dark-roast">
+                <div class="product-image-wrapper">
+                    <img src="images/Bold Dark Roast.webp" alt="Dark Roast Coffee">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">BOLD DARK ROAST</h3>
+                    <div class="product-price">$27.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="signature-blend">
+                <div class="product-image-wrapper">
+                    <img src="images/PREMIUM-Gift-Box-3.avif" alt="Signature Blend">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">SIGNATURE BLEND</h3>
+                    <div class="product-price">$30.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="morning-bliss">
+                <div class="product-image-wrapper">
+                    <img src="images/Morning Bliss Coffee.webp" alt="Morning Bliss">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">MORNING BLISS</h3>
+                    <div class="product-price">$26.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="african-coffee">
+                <div class="product-image-wrapper">
+                    <img src="images/AFRICAN COFFEE.webp" alt="African Coffee">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">AFRICAN COFFEE</h3>
+                    <div class="product-price">$36.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="espresso-taster">
+                <div class="product-image-wrapper">
+                    <img src="images/ESPRESSO TASTER PACK.webp" alt="Espresso Taster">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ESPRESSO TASTER</h3>
+                    <div class="product-price">$38.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="decaf-delight">
+                <div class="product-image-wrapper">
+                    <img src="images/Decaf Delight Beans.webp" alt="Decaf Delight">
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">DECAF DELIGHT</h3>
+                    <div class="product-price">$42.00</div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-section" id="customers">
+        <h2 class="section-heading">Our Happy <span class="highlight-text">Customers</span></h2>
+        <div class="customer-review-grid">
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review1.jpg" alt="Customer 1">
+                    <h3>Al Rafi</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I haven’t ordered yet, but this coffee keeps showing up everywhere. Might just give in and try it soon.</p>
+                </div>
+            </div>
+
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review2.jpg" alt="Customer 2">
+                    <h3>Faysal Islam</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> </div>
+                    <p>Honestly, I don’t even drink coffee that often but this one’s tempting me hard.</p>
+                </div>
+            </div>
+
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review3.jpg" alt="Customer 2">
+                    <h3>Akash Hossain</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> </div>
+                    <p>Still thinking... but the reviews are too good to ignore. If it really tastes that good, I’m in.</p>
+                </div>
+            </div>
+
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review4.jpg" alt="Customer 2">
+                    <h3>Nuzmus Sakib</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> </div>
+                    <p>Hearing great things about this brand. If I see one more positive review, I’m buying it tonight.</p>
+                </div>
+            </div>
+
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review5.jpg" alt="Customer 3">
+                    <h3>Rohan Khan</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> </div>
+                    <p>Not sure how long I can hold back the packaging and feedback both look amazing.</p>
+                </div>
+            </div>
+            
+            <div class="customer-review-card">
+                <div class="customer-info">
+                    <img src="images/review6.jpg" alt="Customer 4">
+                    <h3>Saif Mahamud</h3>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Planning to buy it this weekend. If it lives up to the hype, I’ll make it my go-to.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section" id="contact"> <div class="footer-container">
+            <div class="footer-col about-company">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Coffee Shop Logo"> </div>
+                <p>From a love for coffee grew a passion for perfection.</p>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/the.real.alrafi" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/the_real_alrafi/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/the-real-alrafi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>View Guides</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                    <li><a href="#">Our Branches</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Elias Tower, Pallabi, Mirpur, 1218</li>
+                    <li><i class="fas fa-phone"></i> +88 01728-797***</li>
+                    <li><i class="fas fa-envelope"></i> coffee@shop.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+        </div>
+    </section>
+
+    <div class="quick-view-modal-overlay" id="quickViewModalOverlay">
+        <div class="quick-view-modal-content">
+            <span class="close-modal-btn" id="closeQuickViewModal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-image">
+                    <img src="" alt="Product Image" id="modalProductImage">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modalProductTitle"></h3>
+                    <p class="modal-product-description" id="modalProductDescription"></p>
+                    <div class="modal-product-price" id="modalProductPrice"></div>
+                    <div class="modal-product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                        <button class="btn view-full-details-btn" id="viewFullDetailsBtn">View Full Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script>
+    </body>
+</html>
